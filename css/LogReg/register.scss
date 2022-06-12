@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+body {
+  background-image: url("../../Images/loginRegbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.reg-box {
+  position: relative;
+  width: 25em;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-email > input,
+.reg-pass > input,
+.reg-username > input,
+.reg-cfrm > input {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #e1e5ee;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+  padding: 1rem;
+  background: none;
+  outline: none;
+  margin-bottom: 1.5rem;
+}
+
+.reg-email > input:hover,
+.reg-pass > input:hover,
+.reg-username > input:hover,
+.reg-cfrm > input:hover {
+  border-color: #adffff;
+}
+
+.reg-email > input:focus,
+.reg-pass > input:focus,
+.reg-username > input:focus,
+.reg-cfrm > input:focus {
+  border-color: #18ffff;
+}
+
+.reg-email > label {
+  position: absolute;
+  left: 3rem;
+  top: 3rem;
+  padding: 0 0.5rem;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, top 200ms ease-in;
+}
+
+.reg-pass > label {
+  position: absolute;
+  left: 3rem;
+  top: 13.5rem;
+  padding: 0 0.5rem;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, top 200ms ease-in;
+}
+
+.reg-username > label {
+  position: absolute;
+  left: 3rem;
+  top: 8.5rem;
+  padding: 0 0.5rem;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, top 200ms ease-in;
+}
+
+.reg-cfrm > label {
+  position: absolute;
+  left: 3rem;
+  top: 18.6rem;
+  padding: 0 0.5rem;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, top 200ms ease-in;
+}
+
+.email__form:focus ~ .email__label,
+.email__form:not(:placeholder-shown).email__form:not(:focus) ~ .email__label {
+  top: 1.5rem;
+  left: 4rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.username__form:focus ~ .username__label,
+.username__form:not(:placeholder-shown).username__form:not(:focus)
+  ~ .username__label {
+  top: 6.6rem;
+  left: 4rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.pass__form:focus ~ .pass__label,
+.pass__form:not(:placeholder-shown).pass__form:not(:focus) ~ .pass__label {
+  top: 11.6rem;
+  left: 4rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.cfrm__form:focus ~ .cfrm__label,
+.cfrm__form:not(:placeholder-shown).cfrm__form:not(:focus) ~ .cfrm__label {
+  top: 16.8rem;
+  left: 4rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.reg-btn {
+  align-self: center;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  padding: 0.5rem 3rem;
+  border-radius: 4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  background-color: #45435c;
+}
+
+.reg-box {
+  background-color: white;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  box-shadow: -1px 2px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.web-title {
+  text-align: center;
+}
+.web-title > img {
+  height: 18rem;
+  width: 18rem;
+  object-fit: cover;
+}
+
+.register {
+  margin-top: 1rem;
+  text-align: center;
+}
+.register > a {
+  font-weight: bold;
+  color: #45383f;
+  transition: color 200ms ease;
+}
+
+.register > a:hover {
+  //   color: #45435c;
+  color: #586e9a;
+}
+
+.reg-email > .invalid,
+.reg-username > .invalid,
+.reg-pass > .invalid,
+.reg-cfrm > .invalid,
+.reg-username > .invalid:hover,
+.reg-email > .invalid:hover,
+.reg-pass > .invalid:hover,
+.reg-cfrm > .invalid:hover,
+.reg-cfrm > .invalid:focus,
+.reg-username > .invalid:focus,
+.reg-email > .invalid:focus,
+.reg-pass > .invalid:focus {
+  border: 2px solid #ff5757;
+}
+
+.errors {
+  margin-left: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 0.5rem;
+  align-self: flex-start;
+  margin-top: 22rem;
+}
+
+.errors > p {
+  margin-bottom: 1rem;
+  color: #ff5757;
+}
+
+.msg {
+  display: none;
+}
+.msg:before {
+  font: var(--fa-font-solid);
+  content: "\f071";
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}

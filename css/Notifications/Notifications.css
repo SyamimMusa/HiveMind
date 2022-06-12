@@ -1,0 +1,106 @@
+h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.noti-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50em;
+  height: auto;
+  background-color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.noti-feed {
+  background-color: white;
+  position: relative;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+  border-bottom: 1px solid rgb(140, 134, 134);
+}
+.noti-content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  color: rgb(140, 134, 134);
+  font-size: 1rem;
+}
+
+.noti-title {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.noti-user img {
+  height: 2rem;
+  width: 2rem;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.noti-user {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.noti-user span {
+  align-self: flex-end;
+}
+
+.goto {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.goto:hover {
+  background-color: rgba(36, 160, 237, 0.1);
+  border-radius: 0.3rem;
+}
+
+.noti-section {
+  margin-bottom: 0.4rem;
+
+  height: auto;
+  width: auto;
+  display: flex;
+  gap: 1rem;
+}
+.coms,
+.reps {
+  cursor: pointer;
+  color: #7c7c7c;
+  text-decoration: none;
+  transition: 0.25s all ease;
+}
+
+.coms:hover,
+.reps:hover {
+  color: #60aeff;
+  text-decoration: underline;
+}
+
+.active {
+  color: #60aeff;
+  text-decoration: underline;
+}

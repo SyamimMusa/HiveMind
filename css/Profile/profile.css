@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.feed {
+  display: flex;
+  align-items: center;
+  content-visibility: auto;
+  line-height: 1.4;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: auto;
+}
+.post-wrapper {
+  width: 50em;
+  height: auto;
+  background-color: white;
+  border-radius: 0.3rem;
+  border: 0.01rem solid white;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.post-wrapper:hover {
+  border: 0.01rem solid rgb(31, 31, 31);
+}
+
+.post-header {
+  display: flex;
+  height: auto;
+}
+
+.poster-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 0.2rem;
+  position: relative;
+}
+
+.poster-img img {
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+  border-radius: 0.22rem;
+}
+
+.poster-img a {
+  background-color: #ccc;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.poster-img a,
+.post-interaction a {
+  position: absolute;
+  z-index: 15;
+  height: 3rem;
+  width: 3rem;
+}
+
+.poster-img a:hover {
+  background-color: #ccc;
+  opacity: 0.5;
+}
+
+.poster-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 0.2rem;
+}
+
+.username {
+  height: fit-content;
+  width: auto;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  z-index: 15;
+}
+
+.username:hover {
+  text-decoration: underline;
+}
+
+.time-posted {
+  height: fit-content;
+  width: auto;
+
+  font-size: 0.8rem;
+}
+
+.post-body {
+  min-height: 4em;
+  max-height: 8em;
+  border-radius: 0.3rem;
+  background-color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  content: "";
+  position: relative;
+  z-index: 0;
+  padding: 0.4rem 0.4rem;
+}
+
+.post-body:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(transparent px, white);
+}
+
+.post-title {
+  font-size: 1.3rem;
+}
+
+.post-flair {
+  color: white;
+  height: auto;
+  width: fit-content;
+  padding: 0.025rem 0.6rem;
+  border-radius: 0.5rem;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.question {
+  background-color: rgb(126, 87, 194);
+}
+
+.help {
+  background-color: rgb(240, 98, 146);
+}
+
+.info {
+  background-color: rgb(0, 150, 136);
+}
+
+.general {
+  background-color: rgb(52, 53, 54);
+}
+.post-info {
+  display: flex;
+  flex-direction: column;
+}
+.post-content {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.post-interaction {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  padding: 0.3rem 1rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.comment span,
+.share span {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-left: 0.4rem;
+  z-index: 15;
+  color: #898989;
+  font-weight: bold;
+}
+
+.comment:hover,
+.like:hover,
+.share:hover {
+  background-color: rgba(26, 26, 27, 0.1);
+  border-radius: 0.3rem;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content img {
+  display: none;
+}
+
+.fa-heart {
+  color: #ff5e5e;
+}
+
+.likes {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.fa-share-from-square,
+.fa-comments {
+  color: #898989;
+}
+.redirect {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 14;
+}
+.comment,
+.like,
+.share {
+  position: relative;
+}
+
+.comment a,
+.like a,
+.share a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+}
+
+.post-interaction {
+  z-index: 15;
+}
+.feed {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feed-left {
+  height: 100%;
+  width: 20%;
+}
+
+/* post button */
+
+.post-something {
+  height: fit-content;
+  width: 50em;
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.6rem 1rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.post-something a > input {
+  width: 100%;
+  border-radius: 0.2rem;
+  border-style: none;
+  height: fit-content;
+  padding: 0.3rem 0.3rem;
+  background-color: #eee;
+}
+
+.post-something a > input:hover {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.post-something a > input:focus {
+  border-style: none;
+  border: none;
+  outline: none;
+}
+
+.right-container {
+  height: auto;
+  width: fit-content;
+  margin-left: 14rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container {
+  position: relative;
+  height: auto;
+  width: 16rem;
+  background-color: white;
+  margin-left: 5rem;
+  box-shadow: 0px 1px 11px 4px rgba(173, 173, 173, 0.75);
+}
+
+@media only screen and (max-width: 1300px) {
+  .left-container {
+    display: none;
+  }
+}
+.user-img {
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 0.6rem;
+}
+
+.user-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bio,
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.bio .info-label {
+  color: rgb(24, 24, 24);
+}
+
+.info-content {
+  color: gray;
+  font-size: 0.85rem;
+}
+.user-info,
+.user-name,
+.bio {
+  margin-bottom: 2rem;
+  padding: 0 0.6rem;
+  letter-spacing: 1px;
+}
+
+.user-name {
+  font-size: 1.3rem;
+}
+.profile,
+.bio {
+  margin-bottom: 0.8rem;
+}
+
+.profile-container {
+  height: fit-content;
+  width: fit-content;
+}
+.fa-pen-to-square {
+  position: absolute;
+  font-size: 1rem;
+  top: 1rem;
+  left: 13.5rem;
+  background-color: white;
+  padding: 0.2rem 0.2rem;
+  border-radius: 0.3rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  cursor: pointer;
+  color: #586e9a;
+}
+
+.fa-pen-to-square > a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.3rem;
+  background-color: rgba(208, 208, 208, 0);
+  transition: all ease 0.2s;
+  z-index: 15;
+}
+.fa-pen-to-square > a:hover {
+  background-color: rgba(208, 208, 208, 0.51);
+}
+
+.edit {
+  top: 101%;
+  left: 86%;
+}

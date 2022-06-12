@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: #f1f2f6;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post_title {
+  min-height: 2.1rem;
+  margin-bottom: 4px;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.25rem;
+  border-style: none;
+  width: 100%;
+  resize: none;
+  border: 0.5px solid black;
+
+  margin-right: 0px;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.post_title::placeholder {
+  color: rgb(186, 184, 184);
+}
+
+.post_title:focus {
+  outline: none;
+  border: 0.5px solid black;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: auto;
+  width: auto;
+  padding: 1rem 1rem;
+  border-radius: 0.4rem;
+  justify-content: center;
+}
+
+.input-container {
+  margin-bottom: 0.5rem;
+}
+.counter {
+  position: absolute;
+  font-size: 0.75rem;
+  color: rgb(186, 184, 184);
+  left: 71.5rem;
+  top: 9rem;
+}
+.editor {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type="radio"] {
+  display: none;
+  cursor: pointer;
+}
+
+label {
+  position: relative;
+  color: #01cc65;
+  font-size: 1rem;
+  border: 2px solid #01cc65;
+  padding: 0.125rem 0.25rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+label:before {
+  font: var(--fa-font-solid);
+  content: "\2b";
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #01cc65;
+  color: white;
+}
+
+input[type="radio"]:checked + label:before {
+  font: var(--fa-font-solid);
+  content: "\2b";
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
+  color: white;
+}
+
+button {
+  font-family: "Ubuntu", sans-serif;
+  width: 30%;
+  height: fit-content;
+  font-size: 1rem;
+  padding: 0.6rem 0;
+  line-height: 1;
+  font-weight: bold;
+  align-self: center;
+  letter-spacing: 1px;
+  border: 3px solid #8c82fc;
+  background: #fff;
+  color: #8c82fc;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+
+button:hover {
+  background: #8c82fc;
+  color: #fff;
+}
+
+.error {
+  color: #d65454;
+  display: none;
+}
+
+.invalid,
+.invalid:focus {
+  border: 0.5px solid #d65454;
+}

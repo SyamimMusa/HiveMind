@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+body {
+  background-image: url("../../Images/loginRegbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.login-box {
+  position: relative;
+  width: 25em;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-user > input,
+.login-pass > input {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #e1e5ee;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+  padding: 1rem;
+  background: none;
+  outline: none;
+  margin-bottom: 1.5rem;
+}
+
+.login-user > input:hover,
+.login-pass > input:hover {
+  border-color: #adffff;
+}
+
+.login-user > input:focus,
+.login-pass > input:focus {
+  border-color: #18ffff;
+}
+
+.login-user > label {
+  position: absolute;
+  left: 3rem;
+  top: 3rem;
+  padding: 0 0.5rem;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, top 200ms ease-in;
+}
+
+.login-pass > label {
+  position: absolute;
+  left: 3rem;
+  top: 8.3rem;
+  padding: 0 0.5rem;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, top 200ms ease-in;
+}
+
+.login__form:focus ~ .login__label,
+.login__form:not(:placeholder-shown).login__form:not(:focus) ~ .login__label {
+  top: 1.5rem;
+  left: 4rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.pass__form:focus ~ .pass__label,
+.pass__form:not(:placeholder-shown).pass__form:not(:focus) ~ .pass__label {
+  top: 6.6rem;
+  left: 4rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.login-btn {
+  align-self: center;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  padding: 0.5rem 3rem;
+  border-radius: 4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  background-color: #45435c;
+}
+
+.login-box {
+  background-color: white;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  box-shadow: -1px 2px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.web-title {
+  text-align: center;
+}
+.web-title > img {
+  height: 18rem;
+  width: 18rem;
+  object-fit: cover;
+}
+
+.register {
+  margin-top: 1rem;
+  text-align: center;
+}
+.register > a {
+  font-weight: bold;
+  color: #45383f;
+  transition: color 200ms ease;
+}
+
+.register > a:hover {
+  //   color: #45435c;
+  color: #586e9a;
+}
+.login-user > .invalid,
+.login-pass > .invalid,
+.login-user > .invalid:hover,
+.login-pass > .invalid:hover,
+.login-user > .invalid:focus,
+.login-pass > .invalid:focus {
+  border: 2px solid #ff5757;
+}
+
+.errors p {
+  margin-bottom: 1.3rem;
+  display: none;
+}
+.errors {
+  color: #ff5757;
+  margin-left: 1rem;
+  margin-top: 5rem;
+}
+
+.errors p:before {
+  font: var(--fa-font-solid);
+  content: "\f071";
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
