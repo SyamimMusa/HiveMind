@@ -161,7 +161,7 @@
                     </div>
                     <div class="post-interaction share">
                         <input type="hidden"
-                            value="localhost/HiveMind/comments.php?post_id=<?php echo $detail['postID'] ?>"
+                            value="https://hive-mind-ump.herokuapp.com/comments.php?post_id=<?php echo $detail['postID'] ?>"
                             class="link">
                         <i class="fa-regular fa-share-from-square"><span>Share</span></i>
                     </div>

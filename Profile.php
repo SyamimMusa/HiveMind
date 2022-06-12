@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/prism.js"></script>
     <script src="js/rating.js"></script>
+    <script src="js/share.js"></script>
     <!-- <link rel="stylesheet" type="text/css" id="mce-u0"
         href="http://localhost/StudentHive(v2)/plugin/tinymce/tinymce/js/tinymce/skins/ui/oxide/content.min.css">
     <link rel="stylesheet" type="text/css" id="mce-u1"
@@ -206,6 +207,9 @@
                             <a href="comments.php?post_id=<?php echo $detail['postID']?>"></a>
                         </div>
                         <div class="post-interaction share">
+                            <input type="hidden"
+                                value="https://hive-mind-ump.herokuapp.com/comments.php?post_id=<?php echo $detail['postID'] ?>"
+                                class="link">
                             <i class="fa-regular fa-share-from-square"><span>Share</span></i>
                         </div>
                     </div>

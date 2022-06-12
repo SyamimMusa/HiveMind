@@ -18,13 +18,13 @@
     <script type="text/javascript" src="plugin/tinymce/init-tinymce.js" async defer></script>
 
     <link rel="stylesheet" type="text/css" id="mce-u0"
-        href="http://localhost/StudentHive(v2)/plugin/tinymce/tinymce/js/tinymce/skins/ui/oxide/content.min.css">
+        href="plugin/tinymce/tinymce/js/tinymce/skins/ui/oxide/content.min.css">
     <link rel="stylesheet" type="text/css" id="mce-u1"
-        href="http://localhost/StudentHive(v2)/plugin/tinymce/tinymce/js/tinymce/skins/content/default/content.min.css">
+        href="plugin/tinymce/tinymce/js/tinymce/skins/content/default/content.min.css">
     <link rel="stylesheet" type="text/css" id="mce-u0"
-        href="http://localhost/StudentHive(v2)/plugin/tinymce/tinymce/js/tinymce/skins/ui/oxide/skin.min.css">
+        href="plugin/tinymce/tinymce/js/tinymce/skins/ui/oxide/skin.min.css">
     <link rel="stylesheet" type="text/css" id="mce-u1"
-        href="http://localhost/StudentHive(v2)/plugin/tinymce/tinymce/js/tinymce/skins/content/default/skin.min.css">
+        href="plugin/tinymce/tinymce/js/tinymce/skins/content/default/skin.min.css">
     <script src="https://kit.fontawesome.com/0f3bba9cb1.js" crossorigin="anonymous"></script>
     <script src="js/prism.js"></script>
     <script src="js/postSubmit.js"></script>
