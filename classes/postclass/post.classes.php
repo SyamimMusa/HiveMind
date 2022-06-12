@@ -196,10 +196,10 @@ class Post extends Dbh {
   }
 
   protected function querySearch($search){
-      $link = $this->link();
+    //   $link = $this->link();
   
-      $searchfilter = mysqli_real_escape_string($link,$search);
-      $whr = "WHERE (title LIKE '%".$searchfilter ."%' OR content LIKE '%".$searchfilter ."%')";
+    //   $searchfilter = mysqli_real_escape_string($link,$search);
+      $whr = "WHERE (title LIKE '%".$searchfilter ."%' OR content LIKE '%".$search ."%')";
       $sql = "SELECT * FROM userposts $whr ORDER BY postID DESC;";
 
       $stmt = $this->connect()->query($sql);
