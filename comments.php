@@ -37,11 +37,11 @@ include 'Header.php';
     <script src="https://cdn.tiny.cloud/1/abigls2jsnpkaqwv45a7pxovz1p5nyz8u52gvtr9g99b51gj/tinymce/6/tinymce.min.js"
         referrerpolicy="origin"></script>
     <link rel="stylesheet" type="text/css" id="mce-u0"
-        href="http://localhost/StudentHive(v2)/plugin/tinymce/tinymce/js/tinymce/skins/ui/oxide/skin.min.css">
+        href="plugin/tinymce/tinymce/js/tinymce/skins/ui/oxide/skin.min.css">
     <link rel="stylesheet" type="text/css" id="mce-u0"
-        href="http://localhost/StudentHive(v2)/plugin/tinymce/tinymce/js/tinymce/skins/ui/oxide/content.min.css">
+        href="plugin/tinymce/tinymce/js/tinymce/skins/ui/oxide/content.min.css">
     <link rel="stylesheet" type="text/css" id="mce-u1"
-        href="http://localhost/StudentHive(v2)/plugin/tinymce/tinymce/js/tinymce/skins/content/default/content.min.css">
+        href="plugin/tinymce/tinymce/js/tinymce/skins/content/default/content.min.css">
 
 </head>
 
