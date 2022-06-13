@@ -172,6 +172,7 @@
             <!-- post wrapper -->
 
             <?php  }?>
+            <!-- for each loop -->
 
         </div>
 
