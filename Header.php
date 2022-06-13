@@ -5,7 +5,7 @@
 <html>
 
 <head>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
     <link rel="stylesheet" href="css/Header/Header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
