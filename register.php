@@ -56,7 +56,7 @@
         </div>
 
         <div class="register">
-            <a href="Index.php">Already have an account?</a>
+            <a href="index.php">Already have an account?</a>
         </div>
     </form>
 
